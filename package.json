@@ -1,5 +1,5 @@
 {
-  "name": "api_limiter",
+  "name": "api-rate-limiter-middleware",
   "version": "1.0.0",
   "description": "prevents DoS/DDoS attack on your apis by setting maximum request limit",
   "main": "index.js",

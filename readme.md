@@ -16,7 +16,7 @@ To use this package in your Express application, you need to install it via npm.
 ### **Install via npm**
 
 ```bash
-npm install api_limiter    
+npm install api_rate-limiter-middleware   
 
 
 **Usage**
