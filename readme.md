@@ -1,31 +1,37 @@
-# Express Custom Rate Limiter
+To beautify the `README.md` file and make it easier for users to copy different code parts, you can format it with code blocks and headings. Here's the improved version:
+
+---
+
+# **Express Custom Rate Limiter**
 
 A customizable rate limiter middleware for Express applications that allows you to define rate limits based on a configurable time window and maximum number of requests. This package helps you control the traffic to your API endpoints, prevent abuse, and improve overall server performance.
 
-## Features
+## **Features**
 
 - 🕒 Set custom time windows (in minutes) for rate limiting.
 - 🚦 Define maximum requests allowed per time window.
 - 🛑 Custom error messages for rate-limited responses.
 - 🔄 Apply rate limiting globally or to specific routes, including nested routes.
 
-## Installation
+## **Installation**
 
 To use this package in your Express application, you need to install it via npm.
 
-### **Install via npm**
+### Install via npm
 
 ```bash
-npm install api_rate-limiter-middleware   
+npm i api-rate-limiter-middleware
+```
 
+## **Usage**
 
-**Usage**
-## Basic Usage
-Here's a simple example of how to use the express-custom-rate-limiter package in an Express application.
+### **Basic Usage**
 
-Code: 
+Here's a simple example of how to use the `api-rate-limiter-middleware` package in an Express application.
+
+```js
 const express = require('express');
-const createRateLimiter = require('express-custom-rate-limiter');
+const createRateLimiter = require('api-rate-limiter-middleware');
 
 const app = express();
 
@@ -40,15 +46,15 @@ app.get('/', (req, res) => {
 app.listen(3000, () => {
   console.log('Server running on http://localhost:3000');
 });
+```
 
+### **Applying Rate Limiter to Specific Routes**
 
-
-**Applying Rate Limiter to Specific Routes**
 To apply the rate limiter to specific routes only, you can create multiple instances of the limiter and use them where needed.
 
-Code:
+```js
 const express = require('express');
-const createRateLimiter = require('express-custom-rate-limiter');
+const createRateLimiter = require('api-rate-limiter-middleware');
 
 const app = express();
 
@@ -73,15 +79,15 @@ app.get('/products/:id', (req, res) => {
 app.listen(3000, () => {
   console.log('Server running on http://localhost:3000');
 });
+```
 
+### **Advanced Usage: Applying to Nested Routes**
 
+If you have nested routes, you can also apply the limiter to specific child routes.
 
-**Advanced Usage: Applying to Nested Routes**
-If you have nested routes, you can also apply the limiter to specific children routes
-
-Code:
+```js
 const express = require('express');
-const createRateLimiter = require('express-custom-rate-limiter');
+const createRateLimiter = require('api-rate-limiter-middleware');
 
 const app = express();
 
@@ -105,7 +111,4 @@ app.get('/products/:id/reviews', (req, res) => {
 app.listen(3000, () => {
   console.log('Server running on http://localhost:3000');
 });
-
-
-
-
+```
