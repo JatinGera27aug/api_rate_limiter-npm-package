@@ -1,0 +1,25 @@
+{
+  "name": "api_limiter",
+  "version": "1.0.0",
+  "description": "prevents DoS/DDoS attack on your apis by setting maximum request limit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "nextjs",
+    "reactjs",
+    "limit",
+    "api",
+    "rate-limiter"
+  ],
+  "author": "Jatin Gera",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "express-rate-limiter": "^1.3.1"
+  }
+}
