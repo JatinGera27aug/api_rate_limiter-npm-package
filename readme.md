@@ -1,6 +1,3 @@
-To beautify the `README.md` file and make it easier for users to copy different code parts, you can format it with code blocks and headings. Here's the improved version:
-
----
 
 # **Express Custom Rate Limiter**
 
