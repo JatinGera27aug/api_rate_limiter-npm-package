@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "prevents DoS/DDoS attack on your apis by setting maximum request limit",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JatinGera27aug/api_rate_limiter-npm-package.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
